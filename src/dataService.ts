@@ -1,8 +1,6 @@
-import { of } from 'rxjs';
-
 export class DataService {
     getUsers() {
-        return of([
+        return Promise.resolve([
             {
                 id: 1,
                 name: 'Leanne Graham',
@@ -237,7 +235,7 @@ export class DataService {
     }
 
     getPosts() {
-        return of([
+        return Promise.resolve([
             {
                 userId: 1,
                 id: 1,
@@ -942,7 +940,7 @@ export class DataService {
     }
 
     getComments() {
-        return of([
+        return Promise.resolve([
             {
                 postId: 8,
                 id: 1,

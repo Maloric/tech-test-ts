@@ -5,7 +5,7 @@ function main() {
     let ds = new DataService();
     let us = new UserService(ds);
     let threshold = 10;
-    us.getUsersWithPopularPosts(threshold).subscribe((data) => {
+    us.getUsersWithPopularPosts(threshold).then((data) => {
         console.log(`There are ${data.length} users with more than ${threshold} comments.`);
     });
 }
