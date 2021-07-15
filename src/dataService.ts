@@ -109,7 +109,7 @@ export class DataService {
             {"id":1,"first_name":"Toinette","last_name":"Bercher","movies":[40,23,64,4,36,81,9,8,42,93]},
             {"id":2,"first_name":"Casey","last_name":"Strangwood","movies":[14,96,100,60,1,25,78,32,20,85]},
             {"id":3,"first_name":"Dean","last_name":"Knewstubb","movies":[93,85,12,13,51,29,83,15,31,38]},
-            {"id":4,"first_name":"Corbie","last_name":"Davidovitz","movies":[39,20,78,94,51,86,51,91,53,63]},
+            {"id":4,"first_name":"Corbie","last_name":"Davidovitz","movies":[48,51,100,63,72,20,88,97,17,35]},
             {"id":5,"first_name":"Elsinore","last_name":"Gillitt","movies":[98,82,46,39,75,18,10,37,25,89]},
             {"id":6,"first_name":"Timothea","last_name":"Everall","movies":[44,90,57,32,79,59,58,7,19,71]},
             {"id":7,"first_name":"Conant","last_name":"Lucius","movies":[100,55,28,90,4,72,86,65,4,39]},
