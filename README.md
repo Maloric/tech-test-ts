@@ -6,7 +6,9 @@ Open ./src/movieService.ts and implement the "getMovieStars" function such that:
 
 -   it returns the top movie star for a given genre (e.g. Comedy)
 -   it only considers stars whose movies were release since the provided year
+-   it only considers stars who have made at least 5 films of the provided genre within that time frame
 -   the returned actor/actress should have an "average_rating" property attached, which is the average of all matching movies
+-   
 
 ## Stretch goal
 
