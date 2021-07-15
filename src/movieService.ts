@@ -1,9 +1,9 @@
 import { DataService } from './dataService';
 
-export class UserService {
+export class MovieService {
     constructor(private dataService: DataService) {}
 
-    getUsersWithPopularPosts(commentThreshold: number): Promise<any[]> {
+    getMovieStars(genre: string): Promise<any[]> {
         return Promise.resolve([]);
     }
 }
