@@ -5,7 +5,8 @@ function main() {
     let ds = new DataService();
     let us = new MovieService(ds);
     let genre = 'Comedy';
-    us.getMovieStars(genre).then((data) => {
+    let yearThreshold = 2001;
+    us.getMovieStars(genre, yearThreshold).then((data) => {
         console.log(`The biggest stars in ${genre} are ${
             data.map(x => x.first_name + ' ' + x.last_name).join(',')
         } with average ratings of ${
