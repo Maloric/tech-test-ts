@@ -4,15 +4,16 @@ import { MovieService } from './movieService';
 function main() {
     let ds = new DataService();
     let us = new MovieService(ds);
-    let genre = 'Comedy';
-    let yearThreshold = 2001;
-    us.getMovieStars(genre, yearThreshold).then((data) => {
-        console.log(`The biggest stars in ${genre} are ${
-            data.map(x => x.first_name + ' ' + x.last_name).join(',')
-        } with average ratings of ${
-            data.map(x => x.average_rating)
-        } respecively.`);
+
+    let output = (genre, yearThreshold) =>
+        us.getMovieStars(genre, yearThreshold).then((data) => {
+            console.log(`The biggest star in ${genre} ${yearThreshold > 0 ? 'since ' + yearThreshold : 'of all time'} is ${data.first_name} ${data.last_name} with an average rating of ${data.average_rating}.`);
     });
+
+    output('Comedy', 2001);
+    output('Comedy', 0);
+    output('Action', 2001);
+    output('Action', 0);
 }
 
 console.log('Starting...');

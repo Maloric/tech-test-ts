@@ -4,9 +4,9 @@ The goal of this repo is to test the developer's basic knowledge of Typescript, 
 
 Open ./src/movieService.ts and implement the "getMovieStars" function such that:
 
--   it returns the top 5 movie stars for a given genre (e.g. Comedy)
--   it only returns stars whose movies were release since the provided year
--   the stars are ordered by an "average_rating" property, based on the ratings for each movie in the data service
+-   it returns the top movie star for a given genre (e.g. Comedy)
+-   it only considers stars whose movies were release since the provided year
+-   the returned actor/actress should have an "average_rating" property attached, which is the average of all matching movies
 
 ## Stretch goal
 
